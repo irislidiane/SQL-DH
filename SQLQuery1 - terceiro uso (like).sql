@@ -8,3 +8,10 @@ WHERE
 	--([City] like '%ary%') or ([City] like '%awa%')
 	--)
 	and ([StateProvince] not like ('alberta')) --filtra tudo que não seja alberta
+
+
+
+	select [CountryRegion],[StateProvince],[City], 
+	COUNT(*) as 'Contagem de Linhas'
+	from [SalesLT].[Address]
+	group by [CountryRegion],[StateProvince],[City]
