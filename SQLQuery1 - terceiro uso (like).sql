@@ -14,4 +14,4 @@ WHERE
 	select [CountryRegion],[StateProvince],[City], 
 	COUNT(*) as 'Contagem de Linhas'
 	from [SalesLT].[Address]
-	group by [CountryRegion],[StateProvince],[City]
+	group by [CountryRegion],[StateProvince],[City] 
